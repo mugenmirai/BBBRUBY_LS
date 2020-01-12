@@ -1,0 +1,141 @@
+The Basics:
+
+String is a list of characters in a specific sequence.
+
+String interpolation: handy way to merge ruby code with strings.
+
+Concatination using + operator to add two strings together.
+
+:symbols - when you intend to reference something without the intention of chaning the value.
+    could be an immutable
+
+NUMBERS:
+
+	Integers and Floats, represented by whole numbers, complex w/ decimal
+
+NIL:
+	Expresses "nothing", completely empty, not a specific type. Nothing is returned.
+	method .nil? returns a boolean.
+	treated as false in an if statement (absence of content)
+
+OPERATIONS:
+	adding, substracting, multiplying integers
+	% module gives you the remainder of a division operation.
+
+TYPE CONVERSION:
+	method / returns
+
+BASIC DATA STRUCTURES:
+
+	ARRAYS & HASHES
+
+
+ARRAYS: organizes information in an ordered indexed list. Denoted by [] square brakets.
+	each element in an array can be accessed via their index.
+
+HASHES: referred to as a DICTIONARY, set of key-value pairs represented w/ curly braces.
+	A hash consists of a key that points to a value.
+	Values can be retrieved by their keys.
+
+EXPRESSIONS & RETURN:
+	When typing into an irb prompt we are creating an expression.  An expression is anything that can be evaluated.  Everything you write in ruby is an expression. An expression always returns something, even if it is nil.
+
+Expressions do something, and also return something. The value returned is not necessarily the action that was performed.
+
+//////////////////////////////////////////////////
+
+VARIABLES:
+
+	Variables are used to store information to be referenced, manipulated and passed around in a computer program. Provinding a way to label data with a descriptive name. Containers of information.  Sole purpose to label and store data in memory.
+
+Variable Assignment: use the = symbol / name goes on left / value on right
+	variable = value  storing something in memory to be used throughout the program.
+
+	Variabes point to values in memory and are not deeply linked to each other.
+
+Getting information from a user:
+	gets method for 'get string' it collects pressing enter, which introduces a new line character, we need to chain the gets method with chomp in order to get rid of the newline character. 'carriage return'
+
+VARIABLE SCOPE:
+	A variable's scope determines where in a program a var is available for use.
+	A VS is defined by where the V is initialized/created.
+	In Ruby it's denifed by a 'block'.
+	A block is a piece of code following method invocation.
+
+	INNER SCOPE CAN ACCESS VARIABLES INITIALIZED IN AN OUTER SCOPE / NOT VICE VERSA
+
+TYPES OF VARIABLES:
+
+CONSTANTS
+@global_variables = override all scopes and boundaries.
+@@class_variables // when need to declare a V that is related to a class, but each instance need not of own val for this v
+@instance_variables + "Available throughout the current instance of this class"
+plain_variables = "must be passed around to cross scope boundaries"
+
+//////////////////////////////////////////////////
+
+METHODS:
+
+	a procedure - allows for common code extraction to one place.
+	In ruby it's called a Method.
+
+We call/invoke a METHOD by typing its name and passing in arguments.
+	Parameters are used when we have data outside a method definition's scope, and we need to access it within the method definition.
+
+METHOD INVOCATION: calling a method
+
+ARGUMENTS: are pieces of information sent to a method invocation to be modified or used to return a specific result.  We pass arguments to a method when we call it.
+	when we pass the arguments into the method definition, they are assigned to the local variable 'parameter' name, and can be used any which way within the method definition.
+	We cannot reference this local variable (parameter name) outisde the method definition, its scoped at the method definition level.
+
+				say("hello")
+		when we call /\, we pass the string hello as the argument (in place of the words parameter), then the code within the method definition is executed with the 'words' local variable evaluated to 'hello'.
+
+benefits: allows the ability to make changes in one place that affect many places in the program.
+
+DEFAULT PARAMETERS: in case no arguments are sent, so the method will work.
+	we say "we provided a default parameter that is used whenever our method is called without any arguments"
+
+METHOD DEFINITION AND LOCAL VARIBLE SCOPE:
+
+	A METHOD DEFINITION CREATES ITS OWN SCOPE OUTSIDE THE REGULAR FLOW OF EXECUTION.
+
+
+some_method(obj) - sending arguments to a method call
+		obj is the argument being passed to the 'some_method' method.
+
+a_caller.some_method(ojb) - some method modifying a caller - using an explicit caller.
+
+
+MUTATING THE CALLER:
+	WHEN THE ARGUMENT IS ALTERED PERMANENTLY.
+
+IN RUBY EVERY METHOD RETURNS THE EVALUATED RESULT OF THE LAST LINE THAT IS EXECUTED.
+
+"...because the assignment expression evaluates to 5"
+
+
+CHAINING METHODS: we can keep calling methods on returned values.
+
+//////////////////////////////////////////////////
+
+FLOW CONTROL:
+
+CONDITIONAL FLOW: when we want our data to make the right decisions, by using CONDITIONALS.
+
+CONDITIONALS:
+	a conditional is a fork.
+
+COMPARISONS:
+	comparison operators always return a BOOLEAN VALUE. (either true of false)
+
+ORDER OF PRECEDENCE:
+1. COMPARISON
+2. EQUALITY
+3. LOGICAL AND
+4. LOGICAL OR
+
+IN RUBY EVERY EXPRESSION RETURNS TURE WHEN USED IN FLOW CONTROL, EXCEPT FOR FALSE & NIL.
+
+
+
