@@ -1,0 +1,1 @@
+A primary difference between and array and a hash, is that a hash is key-value paired list without placing major importance of order, creating an associative representation of data.  Where as arrays are ordered list of items.

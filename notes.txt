@@ -137,5 +137,86 @@ ORDER OF PRECEDENCE:
 
 IN RUBY EVERY EXPRESSION RETURNS TURE WHEN USED IN FLOW CONTROL, EXCEPT FOR FALSE & NIL.
 
+//////////////////////////////////////////////////
+
+LOOPS & ITERATORS:
+	WHILE LOOPS, DO/WHILE LOOPS, FOR LOOPS
+	A loop is the repetitive execution of a piece of code for a given amount of repititions or unil a certain condition is met.
+
+	A loop takes a block, and executes any code within the block. until intervention (manual or explicit)
+
+BREAK::USEFUL_LOOP
+
+i = 0
+
+loop do 
+  i += 1
+  puts i 
+  break
+end
+
+Break keyword allows us to exit a loop at any point, any code after break will not be executed.
+Break will not exit the program, only the loop.
+Execution will continue on from after the loop.
+
+FOR LOOPS:
+	used to loop over a collection of elements.
+	have a definited end since it's looping over a finited number of elements.
+	for(reserved word) - i(VARIABLE) - in - [COLLECTION OF ELEMENTS]
+	FOR LOOPS RETURN THE COLLECTION OF ELEMENTS after execution.  While loops return 'nil'.
 
 
+NEXT: skip the rest of the current iteration.
+
+WHILE LOOPS:
+	A While Loop is given a parameter that evaluates to a boolean.  Once that boolean expression becomes false, the while loop is not executed again.
+
+UNTIL LOOPS: - opposite of a while loop****
+
+DO/WHILE LOOPS:
+	similar to a 'while' loop, the code within the loop gets executed one time prior to conditional check, to see if the code should be executed.
+	IN A DO/WHILE LOOP the conditional is placed at the end of the loop.
+
+
+CONDITIONALS WITHIN LOOPS:
+	to make loops more effective & precise we can add conditional flow control within them.
+
+ITERATORS:
+
+	Iterators are methods that naturally loop over a given set of data and allow you to operate on each element in the collection.
+
+a block is just some lines of code, ready to be executed.
+
+**ignore this
+		WE ADDED TEH COUNTER X TO ADD A NUMBER BEFORE EACH NAME, CREATING A NUMBERED LIST OUTPUT.  NUMBER X IS INCREMENTED EVERY TIME WE GO THROUGH ITERATION.
+
+RECURSION:
+	(another way to create a loop in ruby)
+	The act of calling a method from within itself.
+
+	THE KEY CONCEPT W/ RECURSION IS THAT THERE IS SOME BASELINE CONDITION THAT RETURNS A VALUE, WHICH THEN UNWINDS THE RECURSIVE CALL.
+
+//////////////////////////////////////////////////
+
+ARRAYS:
+	are indexed lists. ordered list of elements that can be of any type.
+
+	.pop method - the returned value is the 'popped' element.
+
+	MAKE SURE TO DISTINGUISH B/W THE RETURNED VALUE BY AN EXPRESSION, AND WHAT THE EXPRESSION IS DOING.
+
+	.select method iterates over an array and returns a new array that includes any items that return 'true' to the expression provided.
+
+***ignore this.... we print out the modified values and return the original collection.
+
+USE EACH FOR ITERATION, MAP FOR TRANSFORMATION
+
+//////////////////////////////////////////////////
+
+HASHES: 
+	A has is a data structure that stores items associated by keys.  Entries are referred to as Key-Value pairs.
+	Creating an associative representation of data.
+
+	when we deviate from using symbols as keys, we have to use hash rockets.
+
+	
